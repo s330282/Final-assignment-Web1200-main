@@ -1,7 +1,11 @@
  * {
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    
+}
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
 }
 main {
     margin: 3%;
@@ -32,21 +36,41 @@ main {
 nav{
     padding:10px 80px;
     background-color:rgba(216, 213, 35, 0.85);
-    height: 70px;
+    height: 45px;
+    padding: 0;
+    float: none;
+
 }
 nav .bars{
-    padding: 10px 20px;
+    
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    float: none;
+    margin-top: 0px;
+    left:0;
+    right:0;
+    top:0;
+    border-radius: 0px;
 }
 nav a{
     text-decoration: none;
-    color:rgb(12, 12, 12);
+    color:rgb(16, 9, 117);
     font-size: 21px;
     font-weight: 600;
     padding: 5px;
     margin:2px 5px;
     font-weight: bold;
+    padding: 0px 0px;
+    float: none;
+    margin-top: 0px;
+    left:0;
+    right:0;
+    top:0;
+    border-radius: 0px;
+    position: relative;
+  
+
 }
 
 /* we used hover selector on nav menu and some focus effects ...... */
@@ -54,6 +78,7 @@ nav a{
     background-color: rgba(12, 11, 11, 0.6);
     color: rgb(250, 241, 250);
     border-radius: 25px;
+    outline: none;
     
   }
 .center_index{
@@ -71,6 +96,8 @@ nav a{
     font-size: 3em;
     font-weight: bold;
     text-shadow: rgba(12, 11, 11, 0.9);
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .center_index>p{
@@ -81,8 +108,18 @@ nav a{
     text-align: center;
     color:rgb(255, 255, 255);
     font-size: 1.5em;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
 }
-
+body div{
+    padding: 0;
+    border-radius: 5px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
 
 
 
@@ -94,11 +131,19 @@ nav a{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 10px 10px #f7e605;
+    
 }
 .just img{
-    height: 450px;
-    width:calc(100vw - 50px);
-    margin:auto;
+    max-width: auto;
+    height:auto;
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
 }
 
 p.text{
@@ -122,9 +167,17 @@ p.text{
     margin-top: 20px;
     justify-content: space-around;
     padding:20px 0;
+    background-color: #deec12;
 }
 iframe{
     width:calc(100vw - 50px);
+    max-width: auto;
+    height:auto;
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
 }
 .footer div{
     max-width: 200px;
@@ -133,8 +186,13 @@ footer{
     background:rgb(192, 190, 190);
     padding:20px 0;
     width:100%;
+    padding-left: 15px;
+    padding-right: 15px;
     color:rgb(250, 246, 247);
     font-size: 20px;
+    position: relative;
+    margin:auto;
+    height: auto;
 }
 
 .card > div {
@@ -199,3 +257,77 @@ footer{
     color: rgb(255, 255, 255);
     
 }
+
+@media screen and (max-width: 1201px) {
+    .img{
+      height:auto;
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width:1000px) {
+    .center_index > div{
+      padding-left: 4%;
+    }
+  }
+  @media screen and (max-width:965px) {
+    .center_index h1{
+      font-size: 50px;
+      padding-top: 140px;
+    }
+    .center_index p{
+      font-size: 18px;
+    }
+    .text-container, .about-text-container{
+      padding: 40px;
+    }
+  }
+  @media screen and (max-width:905px){
+    .footer-container > div{
+      flex: none;
+      padding-left: 5px;
+    }
+  }
+  @media screen and (max-width:700px){
+    .footer-container > div{
+      min-width: 215px;
+    }
+  }
+  @media screen and (max-width:650px){
+    .bars {
+      float: none;
+      position: relative;
+      margin-bottom: 30px;
+      padding: 0;
+    }
+    .bars a {
+      width: 100%;
+      padding: 5px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .center_index h1{
+      max-width: 100%;
+      position: relative;
+      font-size: 50px;
+      padding-top: 0px;
+    }
+    .pgtitle h1{
+        max-width: 100%;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 40px;
+      flex-direction: column;
+
+    }
+    .content h2{
+      max-width: 100%;
+      position: relative;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .content{
+      padding: 0;
+    }
+
+  }
