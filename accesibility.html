@@ -4,18 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACCESIBILITY</title>
+    <title>REFLECTION</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemobile.css" media="screen and (max-width:780px)">
 </head>
+
 <body>
     <nav>
         <div class="bars">
             <a href="index.html">WELCOME</a>
             <a href="reflection-essay.html">REFLECTION-ESSAY</a>
-            <a href="accesibility.html">ACCESIBILITY</a>
+            <a href="accesibility.html">ACCESSIBILITY</a>
             <a href="topical-info.html">TOPICAL-INFO</a>
-            <a href="about.html">ABOUT-US</a>
+            <a href="opera.html">OPERA</a>
         </div>
     </nav>
+
+    <main>
+        <div class="pgtitle">
+            <h1>Ensuring accessibility</h1>
+        </div>
+        <article>
+            <section class="section">
+                <div class="content">
+                  <h2 class="title">
+                  </h2>
+                  <p class="paragraph">
+              
+                    We want to ensure that this website has high accessibility. This essentially means that it will be accessible (or usable) by as many people as possible. A lot of people have some sort of physical impairment which affects the way they engage with websites. Those who have poor eyesight may use screen readers, which is software that scans the text on a website and reads it out loud (text to speech). For this reason, we made sure that no text is contained in image files, which would render a screen reader useless. <br>
+                    
+                    Secondly, we ensured that it is possible to use the tab button to cycle through the navigation bar. This way, those with impaired vision are not forced to try to use the mouse or trackpad to navigate the website, which can obviously be hard or flat out impossible for them.<br>
+                    
+                    Color blindness is also a type of visual impairment we took into consideration when designing this website. Colorblind people typically struggle to separate green and red, so we avoided using those colors as much as possible.<br>
+                  </p>
+                </div>
+              </section>
+              <section class="section">
+                <div class="content">
+                  <h2 class="title">
+                  </h2>
+                  <p class="paragraph">
+                    We also wanted to make sure that the website is functional regardless of the type of device the user may choose to access it with. To achieve this, we added some code that checks the user’s device screen width and loads mobile CSS if the screen width is below a set limit.<br>
+                    Additionally, the website Achecker was used to look for ways to improve accessibility. Achecker is an automated tool that scans your code and alerts you if there are things that would hinder accessibility. Luckily for us, we only had one alert across all five webpages. The “error” was that a few images were missing an alt attribute. If an image for whatever reason cannot be loaded, the user instead sees a description of the image. It’s easy to see how this ties in to accessibility; even though an image does not load, the user isn’t left completely in the dark because they are told what the image depicts.<br>
+                  </p>
+                </div>
+              </section>
+        </article>
+    </main>
 </body>
 </html>
